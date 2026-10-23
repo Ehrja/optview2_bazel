@@ -1,0 +1,7 @@
+bazel-*
+user.bazelrc
+optview2_report/
+__pycache__/
+.clwb/
+.idea/
+.ruff_cache/
