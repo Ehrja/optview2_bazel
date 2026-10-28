@@ -1,0 +1,39 @@
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+load("//optview2:defs.bzl", "optview2_report")
+
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "srcs",
+    srcs = glob([
+        "*.cc",
+        "*.h",
+    ]),
+)
+
+cc_library(
+    name = "gain",
+    srcs = ["gain.cc"],
+    hdrs = ["kernels.h"],
+)
+
+cc_library(
+    name = "kernels",
+    srcs = ["kernels.cc"],
+    hdrs = ["kernels.h"],
+    deps = [":gain"],
+)
+
+cc_binary(
+    name = "main",
+    srcs = ["main.cc"],
+    deps = [":kernels"],
+)
+
+# Requires a clang C++ toolchain, see e2e/ for a hermetic setup.
+optview2_report(
+    name = "report",
+    tags = ["manual"],
+    targets = [":main"],
+)

@@ -1,0 +1,28 @@
+load("@optview2_bazel//optview2:defs.bzl", "optview2_report")
+load("@rules_python//python:py_test.bzl", "py_test")
+
+optview2_report(
+    name = "report",
+    targets = ["//src:main"],
+)
+
+optview2_report(
+    name = "report_no_html",
+    exclude_tu_regex = "/main\\.cc\\.opt\\.yaml$",
+    html = False,
+    include_file_regex = "^src/aliasing",
+    targets = ["//src:main"],
+)
+
+py_test(
+    name = "report_test",
+    srcs = ["report_test.py"],
+    args = [
+        "$(rootpaths :report)",
+        "$(rootpaths :report_no_html)",
+    ],
+    data = [
+        ":report",
+        ":report_no_html",
+    ],
+)

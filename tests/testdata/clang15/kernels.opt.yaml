@@ -1,0 +1,1649 @@
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                   Line: 874, Column: 16 }
+Function:        _ZNSt6vectorIdSaIdEE5beginEv
+Args:
+  - String:          ''''
+  - Callee:          _ZN9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEEC2ERKS1_
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1077, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIdSaIdEE5beginEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                       Line: 874, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          begin
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                   Line: 894, Column: 16 }
+Function:        _ZNSt6vectorIdSaIdEE3endEv
+Args:
+  - String:          ''''
+  - Callee:          _ZN9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEEC2ERKS1_
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1077, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIdSaIdEE3endEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                       Line: 894, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          end
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                   Line: 1244, Column: 20 }
+Function:        _ZN9__gnu_cxxneIPdSt6vectorIdSaIdEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
+Args:
+  - String:          ''''
+  - Callee:          _ZNK9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEE4baseEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1163, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN9__gnu_cxxneIPdSt6vectorIdSaIdEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1244, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          'operator!=<double *, std::vector<double, std::allocator<double> > >'
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                   Line: 1244, Column: 36 }
+Function:        _ZN9__gnu_cxxneIPdSt6vectorIdSaIdEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
+Args:
+  - String:          ''''
+  - Callee:          _ZNK9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEE4baseEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1163, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN9__gnu_cxxneIPdSt6vectorIdSaIdEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1244, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          'operator!=<double *, std::vector<double, std::allocator<double> > >'
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '36'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 21 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIdSaIdEE5beginEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                       Line: 874, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 21 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIdSaIdEE3endEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                       Line: 894, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 21 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          ''''
+  - Callee:          _ZN9__gnu_cxxneIPdSt6vectorIdSaIdEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1244, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 21 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          ''''
+  - Callee:          _ZNK9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEEdeEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1100, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 21 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          ''''
+  - Callee:          _ZN9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEEppEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1110, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 21 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIdSaIdEE5beginEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                       Line: 874, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down_by_value
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 21 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIdSaIdEE3endEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h', 
+                       Line: 894, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down_by_value
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 21 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          ''''
+  - Callee:          _ZN9__gnu_cxxneIPdSt6vectorIdSaIdEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1244, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down_by_value
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 21 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          ''''
+  - Callee:          _ZNK9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEEdeEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1100, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down_by_value
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 21 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          ''''
+  - Callee:          _ZN9__gnu_cxx17__normal_iteratorIPdSt6vectorIdSaIdEEEppEv
+    DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                       Line: 1110, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scale_down_by_value
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'examples/kernels.cc', Line: 27, Column: 19 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - Callee:          _ZN8examples10apply_gainEd
+  - String:          ' will not be inlined into '
+  - Caller:          _ZN8examples14apply_gain_allEPdm
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 25, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'examples/kernels.cc', Line: 27, Column: 19 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - Callee:          _ZN8examples10apply_gainEd
+  - String:          ' will not be inlined into '
+  - Caller:          _ZN8examples14apply_gain_allEPdm
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 25, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: 'examples/kernels.cc', Line: 26, Column: 5 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 27, Column: 19 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 18 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            InterleavingNotBeneficial
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          the cost-model indicates that interleaving is not beneficial
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'vectorized loop (vectorization width: '
+  - VectorizationFactor: '2'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '1'
+  - String:          ')'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                   Line: 1077, Column: 20 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '2'
+  - String:          ' with run-time trip count'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'hoisting '
+  - Inst:            insertelement
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'hoisting '
+  - Inst:            shufflevector
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'hoisting '
+  - Inst:            insertelement
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'hoisting '
+  - Inst:            shufflevector
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 17 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            InterleavingNotBeneficial
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 5 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          the cost-model indicates that interleaving is not beneficial
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 5 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'vectorized loop (vectorization width: '
+  - VectorizationFactor: '2'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '1'
+  - String:          ')'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                   Line: 1077, Column: 20 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 5 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '2'
+  - String:          ' with run-time trip count'
+...
+--- !AnalysisFPCommute
+Pass:            loop-vectorize
+Name:            CantReorderFPOps
+DebugLoc:        { File: 'examples/kernels.cc', Line: 20, Column: 13 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'loop not vectorized: cannot prove it is safe to reorder floating-point operations'
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '8'
+  - String:          ' with run-time trip count'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: 'examples/kernels.cc', Line: 27, Column: 19 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'examples/kernels.cc', Line: 26, Column: 5 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'examples/kernels.cc', Line: 26, Column: 5 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: 'examples/kernels.cc', Line: 26, Column: 5 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: 'examples/kernels.cc', Line: 27, Column: 19 }
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantIdentifyArrayBounds
+DebugLoc:        { File: 'examples/kernels.cc', Line: 33, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'loop not vectorized: '
+  - String:          cannot identify array bounds
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'examples/kernels.cc', Line: 32, Column: 5 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: 'examples/kernels.cc', Line: 32, Column: 5 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '2'
+  - String:          ' with run-time trip count'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'examples/kernels.cc', Line: 35, Column: 9 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 1 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.029412e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                   Line: 1077, Column: 20 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 5 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 6, Column: 21 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 7, Column: 14 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 9, Column: 1 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'examples/kernels.cc', Line: 5, Column: 0 }
+Function:        _ZN8examples10scale_downERSt6vectorIdSaIdEERKd
+Args:
+  - NumInstructions: '61'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 1 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - NumVRCopies:     '5'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.735294e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h', 
+                   Line: 1077, Column: 20 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 5 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 5 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 5 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 13, Column: 14 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 13, Column: 14 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 12, Column: 21 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 13, Column: 14 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 15, Column: 1 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'examples/kernels.cc', Line: 11, Column: 0 }
+Function:        _ZN8examples19scale_down_by_valueERSt6vectorIdSaIdEEd
+Args:
+  - NumInstructions: '52'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'examples/kernels.cc', Line: 17, Column: 1 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.400000e-01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'examples/kernels.cc', Line: 17, Column: 0 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 31 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 20, Column: 13 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 19, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 20, Column: 13 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 22, Column: 5 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'examples/kernels.cc', Line: 17, Column: 0 }
+Function:        _ZN8examples3sumEPKdm
+Args:
+  - NumInstructions: '35'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'examples/kernels.cc', Line: 25, Column: 0 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - NumStackBytes:   '24'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 26, Column: 31 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 27, Column: 30 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 29, Column: 1 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'examples/kernels.cc', Line: 25, Column: 0 }
+Function:        _ZN8examples14apply_gain_allEPdm
+Args:
+  - NumInstructions: '18'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'examples/kernels.cc', Line: 31, Column: 1 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.200000e-01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'examples/kernels.cc', Line: 31, Column: 0 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 32, Column: 31 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 34, Column: 47 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 32, Column: 5 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 32, Column: 5 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/kernels.cc', Line: 37, Column: 1 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'examples/kernels.cc', Line: 31, Column: 0 }
+Function:        _ZN8examples9Histogram10accumulateEPKhmPh
+Args:
+  - NumInstructions: '35'
+  - String:          ' instructions in function'
+...

@@ -1,0 +1,54 @@
+load("@rules_python//python:py_binary.bzl", "py_binary")
+load("@rules_python//python:py_library.bzl", "py_library")
+load(":labels.bzl", "OPTVIEW2_ASPECT")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files(["requirements_lock.txt"])
+
+# Python deps of OptView2. Point these at your own pip hub to avoid a second
+# PyPI resolution, e.g. --@optview2_bazel//tools:pyyaml=@my_pypi//pyyaml
+label_flag(
+    name = "pyyaml",
+    build_setting_default = "@optview2_bazel_pypi//pyyaml",
+)
+
+label_flag(
+    name = "pygments",
+    build_setting_default = "@optview2_bazel_pypi//pygments",
+)
+
+py_library(
+    name = "report_lib",
+    srcs = [
+        "report.py",
+        "triage.py",
+    ],
+    imports = ["."],
+    deps = ["@optview2"],
+)
+
+# Action backend of optview2_report (also usable standalone, see report.py --help).
+py_binary(
+    name = "report",
+    srcs = ["report.py"],
+    main = "report.py",
+    deps = [":report_lib"],
+)
+
+py_library(
+    name = "optview2_lib",
+    srcs = ["optview2_bazel.py"],
+    imports = ["."],
+    deps = [":report_lib"],
+)
+
+# `bazel run @optview2_bazel//:optview2 -- [options] -- <bazel build args>`
+py_binary(
+    name = "optview2",
+    srcs = ["optview2_bazel.py"],
+    # Canonical label, so that the nested `bazel build` works from any workspace.
+    args = ["--aspect=" + OPTVIEW2_ASPECT],
+    main = "optview2_bazel.py",
+    deps = [":optview2_lib"],
+)

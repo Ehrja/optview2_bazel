@@ -1,0 +1,23 @@
+line-length = 120
+target-version = "py312"
+extend-exclude = ["tests/testdata"]
+
+[lint]
+select = [
+    "E",   # pycodestyle
+    "W",
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # bugbear
+    "UP",  # pyupgrade
+    "SIM", # simplify
+    "C90", # mccabe complexity
+]
+
+[lint.mccabe]
+max-complexity = 10
+
+[lint.isort]
+# Resolved via sys.path at runtime (py_library imports / OptView2 checkout).
+known-first-party = ["report", "triage", "optview2_bazel"]
+known-third-party = ["optrecord", "yaml"]

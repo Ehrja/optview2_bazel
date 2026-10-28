@@ -1,0 +1,43 @@
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
+load("@bazel_skylib//rules:common_settings.bzl", "bool_flag", "string_flag", "string_list_flag")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files(["defs.bzl"])
+
+# Extra flags appended to every OptView2 compile, e.g.
+#   --@optview2_bazel//optview2:extra_copts=-foptimization-record-passes=inline|licm|gvn|loop-vectorize
+#   --@optview2_bazel//optview2:extra_copts=-fprofile-instr-use=/abs/path/app.profdata,-fdiagnostics-show-hotness
+string_list_flag(
+    name = "extra_copts",
+    build_setting_default = [],
+)
+
+# What to do when the resolved C++ toolchain is not clang:
+#   error - fail analysis with a helpful message (default)
+#   skip  - silently produce no remarks for such targets
+#   off   - do not check (e.g. clang hidden behind a wrapper without "clang" in its name)
+string_flag(
+    name = "compiler_check",
+    build_setting_default = "error",
+    values = [
+        "error",
+        "skip",
+        "off",
+    ],
+)
+
+# Also analyze cc targets from external repositories (third-party code).
+bool_flag(
+    name = "include_external",
+    build_setting_default = False,
+)
+
+bzl_library(
+    name = "defs",
+    srcs = [
+        "defs.bzl",
+        "extensions.bzl",
+    ],
+    deps = ["//optview2/private"],
+)

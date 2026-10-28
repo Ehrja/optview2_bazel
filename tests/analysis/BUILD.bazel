@@ -1,0 +1,100 @@
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+load(":aspect_test.bzl", "implementation_deps_test", "is_clang_test", "library_test", "no_yaml_test", "skip_test", "transitive_test")
+
+cc_library(
+    name = "lib",
+    srcs = [
+        "a.cc",
+        "b.c",
+    ],
+    hdrs = ["lib.h"],
+    copts = ["-Wno-optview2-copt"],
+    defines = ["OPTVIEW2_DEFINE=1"],
+    local_defines = ["OPTVIEW2_LOCAL=1"],
+    tags = ["manual"],
+)
+
+cc_binary(
+    name = "bin",
+    srcs = ["main.cc"],
+    tags = ["manual"],
+    deps = [":lib"],
+)
+
+cc_library(
+    name = "header_only",
+    hdrs = ["lib.h"],
+    tags = ["manual"],
+)
+
+cc_library(
+    name = "opted_out",
+    srcs = ["a.cc"],
+    tags = [
+        "manual",
+        "no-optview2",
+    ],
+)
+
+cc_library(
+    name = "single",
+    srcs = ["a.cc"],
+    tags = ["manual"],
+)
+
+cc_library(
+    name = "impl",
+    srcs = ["impl.cc"],
+    hdrs = ["impl.h"],
+    defines = ["OPTVIEW2_IMPL_DEFINE=1"],
+    tags = ["manual"],
+)
+
+cc_library(
+    name = "uses_impl",
+    srcs = ["uses_impl.cc"],
+    implementation_deps = [":impl"],
+    tags = ["manual"],
+)
+
+implementation_deps_test(
+    name = "implementation_deps_test",
+    target_under_test = ":uses_impl",
+)
+
+library_test(
+    name = "library_test",
+    target_under_test = ":lib",
+)
+
+transitive_test(
+    name = "transitive_test",
+    target_under_test = ":bin",
+)
+
+no_yaml_test(
+    name = "header_only_test",
+    target_under_test = ":header_only",
+)
+
+no_yaml_test(
+    name = "opted_out_test",
+    target_under_test = ":opted_out",
+)
+
+skip_test(
+    name = "skip_non_clang_test",
+    host_is_clang = select({
+        "//tests/analysis:host_toolchain_is_clang": True,
+        "//conditions:default": False,
+    }),
+    target_under_test = ":single",
+)
+
+config_setting(
+    name = "host_toolchain_is_clang",
+    flag_values = {"@rules_cc//cc/private/toolchain:compiler": "clang"},
+)
+
+is_clang_test(name = "is_clang_test")

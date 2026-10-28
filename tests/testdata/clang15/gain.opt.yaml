@@ -1,0 +1,32 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'examples/gain.cc', Line: 5, Column: 0 }
+Function:        _ZN8examples10apply_gainEd
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'examples/gain.cc', Line: 5, Column: 46 }
+Function:        _ZN8examples10apply_gainEd
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'examples/gain.cc', Line: 5, Column: 0 }
+Function:        _ZN8examples10apply_gainEd
+Args:
+  - NumInstructions: '3'
+  - String:          ' instructions in function'
+...

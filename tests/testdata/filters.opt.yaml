@@ -1,0 +1,102 @@
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: 'other/b.cc', Line: 2, Column: 5 }
+Function:        _Z1bv
+Hotness:         10
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'external/thirdparty/lib.h', Line: 3, Column: 5 }
+Function:        _Z3libv
+Args:
+  - String:          'load of type i32 not eliminated'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'bazel-out/k8-opt/bin/pkg/gen.pb.h', Line: 10, Column: 1 }
+Function:        _Z3genv
+Args:
+  - String:          'load of type i32 not eliminated'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: '/usr/include/c++/13/bits/stl_vector.h', Line: 100, Column: 1 }
+Function:        _Z3stlv
+Args:
+  - String:          'load of type i32 not eliminated'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'pkg/a.cc', Line: 5, Column: 3 }
+Function:        _Z1av
+Args:
+  - Callee:          _ZNSt6vectorIiSaIiEE9push_backERKi
+  - String:          ' will not be inlined into '
+  - Caller:          _Z1av
+    DebugLoc:        { File: 'pkg/a.cc', Line: 4, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'pkg/a.cc', Line: 6, Column: 3 }
+Function:        _Z1av
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'pkg/a.cc', Line: 7, Column: 9 }
+Function:        _Z1av
+Hotness:         100
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'other/b.cc', Line: 2, Column: 1 }
+Function:        _Z1bv
+Hotness:         10
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'pkg/a.cc', Line: 8, Column: 3 }
+Function:        _Z1av
+Args:
+  - Callee:          _Z1cv
+  - String:          ' inlined into '
+  - Caller:          _Z1av
+    DebugLoc:        { File: 'pkg/a.cc', Line: 4, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: './pkg/a.cc', Line: 7, Column: 9 }
+Function:        _Z1av
+Hotness:         100
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: './pkg/a.cc', Line: 9, Column: 9 }
+Function:        _Z1av
+Args:
+  - String:          'load of type i32 not eliminated because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: './pkg/../pkg/a.cc', Line: 8, Column: 3 }
+...

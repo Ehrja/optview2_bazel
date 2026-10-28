@@ -1,0 +1,5 @@
+alias(
+    name = "optview2",
+    actual = "//tools:optview2",
+    visibility = ["//visibility:public"],
+)

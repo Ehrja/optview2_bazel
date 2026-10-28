@@ -1,0 +1,24 @@
+# Install once: `pip install pre-commit && pre-commit install`
+# Run on everything: `pre-commit run --all-files`
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+        exclude: \.opt\.yaml$ # multi-document clang remark files with custom tags
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        exclude: ^tests/testdata/ # verbatim compiler output
+
+  - repo: https://github.com/keith/pre-commit-buildifier
+    rev: 10.1.0
+    hooks:
+      - id: buildifier
+      - id: buildifier-lint
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.2
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format

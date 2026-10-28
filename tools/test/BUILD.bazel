@@ -1,0 +1,24 @@
+load("@rules_python//python:py_test.bzl", "py_test")
+
+# Unit tests of the python tools. Component tests (real clang output, examples/) live in //tests.
+
+py_test(
+    name = "triage_test",
+    size = "small",
+    srcs = ["triage_test.py"],
+    deps = ["//tools:report_lib"],
+)
+
+py_test(
+    name = "report_test",
+    size = "small",
+    srcs = ["report_test.py"],
+    deps = ["//tools:report_lib"],
+)
+
+py_test(
+    name = "optview2_bazel_test",
+    size = "small",
+    srcs = ["optview2_bazel_test.py"],
+    deps = ["//tools:optview2_lib"],
+)
